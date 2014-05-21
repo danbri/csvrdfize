@@ -1,0 +1,18 @@
+{
+    "primary_key": "<site/22580943/date-time/{sample-time}>",
+    "baseuri": "<http://data.example.org/wow/data/weather-observations/>",
+    "columns": [
+        {
+            "short_name": "sample-time"
+        },
+        {
+            "short_name": "air-temp",
+            "predicate": "def-op:airTemperature_C",
+            "datatype": "xsd:double"
+        },
+        {
+            "short_name": "dew-point",
+            "datatype": "xsd:double"
+        }
+    ]
+}
