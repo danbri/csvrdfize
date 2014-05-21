@@ -1,0 +1,71 @@
+@base	<http://data.example.org/wow/data/weather-observations/>  .
+
+
+# ROW:  ['2013-12-13T08:00:00Z', '11.2', '10.2']
+# COL: 0 SN:  sample-time
+# COL: 1 SN:  air-temp
+# COL: 2 SN:  dew-point
+# rowvalmap:  {'dew-point': '10.2', 'air-temp': '11.2', 'sample-time': '2013-12-13T08:00:00Z'}
+# RDFTMP:  http://data.example.org/wow/data/weather-observations/site/22580943/date-time/{sample-time} http://purl.oclc.org/NET/ssnx/ssn#observationResult ub1bL11C29
+<http://data.example.org/wow/data/weather-observations/site/22580943/date-time/2013-12-13T08%3A00%3A00Z> <http://purl.oclc.org/NET/ssnx/ssn#observationResult> <ub1bL11C29> .
+
+# RDFTMP:  http://data.example.org/wow/data/weather-observations/site/22580943/date-time/{sample-time} http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://purl.oclc.org/NET/ssnx/ssn#Observation
+<http://data.example.org/wow/data/weather-observations/site/22580943/date-time/2013-12-13T08%3A00%3A00Z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.oclc.org/NET/ssnx/ssn#Observation> .
+
+# RDFTMP:  ub1bL10C35 http://www.w3.org/2006/time#inXSDDateTime {sample-time}
+<ub1bL10C35> <http://www.w3.org/2006/time#inXSDDateTime> <2013-12-13T08%3A00%3A00Z> .
+
+# RDFTMP:  ub1bL11C29 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://purl.oclc.org/NET/ssnx/ssn#SensorOutput
+<ub1bL11C29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.oclc.org/NET/ssnx/ssn#SensorOutput> .
+
+# RDFTMP:  ub1bL13C35 http://qudt.org/1.1/schema/qudt#numericValue {air-temp}
+<ub1bL13C35> <http://qudt.org/1.1/schema/qudt#numericValue> <11.2> .
+
+# RDFTMP:  ub1bL14C40 http://qudt.org/1.1/schema/qudt#numericValue {dew-point}
+<ub1bL14C40> <http://qudt.org/1.1/schema/qudt#numericValue> <10.2> .
+
+# RDFTMP:  ub1bL11C29 http://data.example.org/wow/def/observed-property#dewPointTemperature_C ub1bL14C40
+<ub1bL11C29> <http://data.example.org/wow/def/observed-property#dewPointTemperature_C> <ub1bL14C40> .
+
+# RDFTMP:  http://data.example.org/wow/data/weather-observations/site/22580943/date-time/{sample-time} http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime ub1bL10C35
+<http://data.example.org/wow/data/weather-observations/site/22580943/date-time/2013-12-13T08%3A00%3A00Z> <http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime> <ub1bL10C35> .
+
+# RDFTMP:  ub1bL11C29 http://data.example.org/wow/def/observed-property#airTemperature_C ub1bL13C35
+<ub1bL11C29> <http://data.example.org/wow/def/observed-property#airTemperature_C> <ub1bL13C35> .
+
+
+
+# ROW:  ['2013-12-13T09:00:00Z', '12.0', '10.2']
+# COL: 0 SN:  sample-time
+# COL: 1 SN:  air-temp
+# COL: 2 SN:  dew-point
+# rowvalmap:  {'dew-point': '10.2', 'air-temp': '12.0', 'sample-time': '2013-12-13T09:00:00Z'}
+# RDFTMP:  http://data.example.org/wow/data/weather-observations/site/22580943/date-time/{sample-time} http://purl.oclc.org/NET/ssnx/ssn#observationResult ub1bL11C29
+<http://data.example.org/wow/data/weather-observations/site/22580943/date-time/2013-12-13T09%3A00%3A00Z> <http://purl.oclc.org/NET/ssnx/ssn#observationResult> <ub1bL11C29> .
+
+# RDFTMP:  http://data.example.org/wow/data/weather-observations/site/22580943/date-time/{sample-time} http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://purl.oclc.org/NET/ssnx/ssn#Observation
+<http://data.example.org/wow/data/weather-observations/site/22580943/date-time/2013-12-13T09%3A00%3A00Z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.oclc.org/NET/ssnx/ssn#Observation> .
+
+# RDFTMP:  ub1bL10C35 http://www.w3.org/2006/time#inXSDDateTime {sample-time}
+<ub1bL10C35> <http://www.w3.org/2006/time#inXSDDateTime> <2013-12-13T09%3A00%3A00Z> .
+
+# RDFTMP:  ub1bL11C29 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://purl.oclc.org/NET/ssnx/ssn#SensorOutput
+<ub1bL11C29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.oclc.org/NET/ssnx/ssn#SensorOutput> .
+
+# RDFTMP:  ub1bL13C35 http://qudt.org/1.1/schema/qudt#numericValue {air-temp}
+<ub1bL13C35> <http://qudt.org/1.1/schema/qudt#numericValue> <12.0> .
+
+# RDFTMP:  ub1bL14C40 http://qudt.org/1.1/schema/qudt#numericValue {dew-point}
+<ub1bL14C40> <http://qudt.org/1.1/schema/qudt#numericValue> <10.2> .
+
+# RDFTMP:  ub1bL11C29 http://data.example.org/wow/def/observed-property#dewPointTemperature_C ub1bL14C40
+<ub1bL11C29> <http://data.example.org/wow/def/observed-property#dewPointTemperature_C> <ub1bL14C40> .
+
+# RDFTMP:  http://data.example.org/wow/data/weather-observations/site/22580943/date-time/{sample-time} http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime ub1bL10C35
+<http://data.example.org/wow/data/weather-observations/site/22580943/date-time/2013-12-13T09%3A00%3A00Z> <http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime> <ub1bL10C35> .
+
+# RDFTMP:  ub1bL11C29 http://data.example.org/wow/def/observed-property#airTemperature_C ub1bL13C35
+<ub1bL11C29> <http://data.example.org/wow/def/observed-property#airTemperature_C> <ub1bL13C35> .
+
+
+

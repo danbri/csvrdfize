@@ -1,0 +1,16 @@
+@base               <http://data.example.org/wow/data/weather-observations/> .
+@prefix ssn:        <http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix time:       <http://www.w3.org/2006/time#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> . 
+@prefix qudt:       <http://qudt.org/1.1/schema/qudt#> .
+@prefix def-op:     <http://data.example.org/wow/def/observed-property#> .
+
+
+<site/22580943/date-time/{sample-time}>
+		    a ssn:Observation ;
+		    ssn:observationSamplingTime [ time:inXSDDateTime "{sample-time}"^^xsd:dateTime ] ;
+		    ssn:observationResult [
+		        a ssn:SensorOutput ;
+		        def-op:airTemperature_C [ qudt:numericValue "{air-temp}"^^xsd:double ] ;
+		        def-op:dewPointTemperature_C [ qudt:numericValue "{dew-point}"^^xsd:double ] ] .
+
